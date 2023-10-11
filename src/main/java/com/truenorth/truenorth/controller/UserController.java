@@ -18,7 +18,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("register")
+    @PostMapping("sign-in")
     @Operation(summary = "Create User", description = "This method creates a new user")
     public ResponseEntity<UserResponse> createCourse(@RequestBody CreateNewUserRequest createNewUserRequest){
         UserResponse userResponse = userService.createNewUser(createNewUserRequest);
