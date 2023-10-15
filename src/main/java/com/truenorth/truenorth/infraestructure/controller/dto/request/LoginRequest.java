@@ -19,7 +19,7 @@ public class LoginRequest {
     @NotEmpty
     @Pattern(regexp = "^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$")
     @Schema(allowableValues = {"hector.ocampo@truenorth.com"})
-    private String email;
+    private String username;
 
     @NotEmpty
     @Size(min = 6, max = 50)
