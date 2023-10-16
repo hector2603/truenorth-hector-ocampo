@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import static com.truenorth.truenorth.application.constants.PathConstants.*;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:3000/","https://truenorth-hector-ocampo-frontent-calculator.vercel.app/"}, allowedHeaders = "*", allowCredentials = "true")
+@CrossOrigin(origins = {"http://localhost:3000/","https://truenorth-hector-ocampo-frontent-calculator.vercel.app/"}, allowedHeaders = "*")
 @RequestMapping(AUTH)
 @Tag(name = "Auth Controller", description = "Controller to manage the users authentication")
 public class AuthController {
