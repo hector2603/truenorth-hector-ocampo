@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import static com.truenorth.truenorth.application.constants.PathConstants.USER;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:3000/","https://truenorth-hector-ocampo-frontent-calculator.vercel.app/"}, allowedHeaders = "*", allowCredentials = "true")
+@CrossOrigin(origins = {"http://localhost:3000/","https://truenorth-hector-ocampo-frontent-calculator.vercel.app/", "https://truenorth-hector-ocampo-production.up.railway.app/"}, allowedHeaders = "*", allowCredentials = "true")
 @RequestMapping(USER)
 @Tag(name = "UserController", description = "Controller to manage the users")
 public class UserController {

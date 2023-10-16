@@ -23,7 +23,7 @@ import java.util.Set;
 import static com.truenorth.truenorth.application.constants.PathConstants.OPERATION;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:3000/","https://truenorth-hector-ocampo-frontent-calculator.vercel.app/"}, allowedHeaders = "*", allowCredentials = "true")
+@CrossOrigin(origins = {"http://localhost:3000/","https://truenorth-hector-ocampo-frontent-calculator.vercel.app/", "https://truenorth-hector-ocampo-production.up.railway.app/"}, allowedHeaders = "*", allowCredentials = "true")
 @RequestMapping(OPERATION)
 @Tag(name = "OperationController", description = "Controller to manage the operation that the user do")
 public class OperationController {

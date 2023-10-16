@@ -18,7 +18,7 @@ import java.util.List;
 import static com.truenorth.truenorth.application.constants.PathConstants.RECORD;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:3000/","https://truenorth-hector-ocampo-frontent-calculator.vercel.app/"}, allowedHeaders = "*", allowCredentials = "true")
+@CrossOrigin(origins = {"http://localhost:3000/","https://truenorth-hector-ocampo-frontent-calculator.vercel.app/", "https://truenorth-hector-ocampo-production.up.railway.app/"}, allowedHeaders = "*", allowCredentials = "true")
 @RequestMapping(RECORD)
 @Tag(name = "RecordController", description = "Controller to manage the records")
 public class RecordController {
