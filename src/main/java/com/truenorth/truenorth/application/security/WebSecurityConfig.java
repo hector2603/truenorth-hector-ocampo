@@ -84,6 +84,7 @@ public class WebSecurityConfig {
         configuration.setAllowedMethods(Arrays.asList("*"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/auth/**", configuration);
         source.registerCorsConfiguration("/user/**", configuration);
         source.registerCorsConfiguration("/record/**", configuration);
         source.registerCorsConfiguration("/operation/**", configuration);
